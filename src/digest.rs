@@ -262,8 +262,9 @@ impl core::fmt::Debug for Digest {
 }
 
 /// A digest algorithm.
+#[allow(missing_docs)]
 pub struct Algorithm {
-    output_len: usize,
+    pub output_len: usize,
     chaining_len: usize,
     block_len: usize,
 
